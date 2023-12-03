@@ -21,7 +21,7 @@ export default function Home() {
         space="$4"
         maxWidth={600}
       >
-        <H1 textAlign="center">Welcome to Tamagui.</H1>
+        <H1 textAlign="center">Welcome Brian.</H1>
         <Paragraph textAlign="center">
           Here&apos;s a basic starter to show navigating from one screen to
           another.
