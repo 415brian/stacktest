@@ -9,7 +9,9 @@ export default function HomePage() {
       f={1}
       jc="center"
       ai="center"
+      space="$3"
     >
+      <Text fos="$4">Page "pushed above" the tab bar:</Text>
       <Button
         bc="white"
         borderWidth="$1"
