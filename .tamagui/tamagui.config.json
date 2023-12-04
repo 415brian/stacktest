@@ -529,7 +529,7 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
-              "fontFamily": "unset",
+              "fontFamily": "Inter",
               "suppressHighlighting": true,
               "opacity": 0,
               "lineHeight": 0,
@@ -2310,7 +2310,7 @@
             "acceptsClassName": true,
             "isText": true,
             "defaultProps": {
-              "fontFamily": "unset",
+              "fontFamily": "Inter",
               "suppressHighlighting": true,
               "unstyled": false
             },

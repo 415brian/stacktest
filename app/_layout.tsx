@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { useColorScheme } from "react-native";
 import {
   DarkTheme,
@@ -6,6 +6,7 @@ import {
   ThemeProvider
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
+import * as Font from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { TamaguiProvider, Text, Theme } from "tamagui";
 
@@ -34,17 +35,16 @@ export default function Layout() {
     <TamaguiProvider config={config}>
       <Suspense fallback={<Text>Loading...</Text>}>
         <Theme name={colorScheme}>
-          <ThemeProvider
-            value={colorScheme === "light" ? DefaultTheme : DarkTheme}
-          >
-            <MySafeAreaView>
-              <Stack
-                screenOptions={{
+          <MySafeAreaView>
+            <Stack>
+              <Stack.Screen
+                name="(tabs)"
+                options={{
                   headerShown: false
                 }}
               />
-            </MySafeAreaView>
-          </ThemeProvider>
+            </Stack>
+          </MySafeAreaView>
         </Theme>
       </Suspense>
     </TamaguiProvider>
