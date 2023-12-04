@@ -1,5 +1,5 @@
+import React from "react";
 import { YStack, Text } from "tamagui";
-import { Link } from "expo-router";
 
 export default function SettingsPage() {
   return (

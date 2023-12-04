@@ -1,5 +1,5 @@
 import { YStack, Text, Button } from "tamagui";
-import { Link, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 
 export default function HomePage() {
   const router = useRouter();
@@ -11,7 +11,7 @@ export default function HomePage() {
       ai="center"
       space="$3"
     >
-      <Text fos="$4">Page "pushed above" the tab bar:</Text>
+      <Text fos="$4">Page "pushed withiin" the tab bar:</Text>
       <Button
         bc="white"
         borderWidth="$1"

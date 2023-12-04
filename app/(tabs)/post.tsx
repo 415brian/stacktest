@@ -11,7 +11,7 @@ export default function PostsPage() {
       ai="center"
       space="$3"
     >
-      <Text fos="$4">Pages "pushed within" the tab bar:</Text>
+      <Text fos="$4">Pages "pushed above" the tab bar:</Text>
       <Link
         href="/posts/1"
         style={{ fontSize: 20, color: "blue" }}

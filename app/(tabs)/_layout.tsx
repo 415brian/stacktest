@@ -1,6 +1,6 @@
+import React from "react";
 import { Tabs, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Button } from "tamagui";
 
 export default function Layout() {
   const router = useRouter();
