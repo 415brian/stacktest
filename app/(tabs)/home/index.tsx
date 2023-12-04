@@ -17,7 +17,12 @@ export default function HomePage() {
         borderRadius={10}
         onPress={() => router.push("/home/settings")}
       >
-        Go to Settings
+        <Button.Text
+          fow={600}
+          fos="$5"
+        >
+          Settings Page
+        </Button.Text>
       </Button>
     </YStack>
   );

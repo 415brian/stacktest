@@ -1,8 +1,8 @@
 import { YStack, Text } from "tamagui";
-import { Stack, useSearchParams } from "expo-router";
+import { Stack, useGlobalSearchParams } from "expo-router";
 
 export default function DetailsPage() {
-  const { id } = useSearchParams();
+  const { id } = useGlobalSearchParams();
 
   return (
     <YStack
@@ -11,7 +11,7 @@ export default function DetailsPage() {
       ai="center"
     >
       <Stack.Screen options={{ headerTitle: `Details #${id} ` }} />
-      <Text>Details for : {id}</Text>
+      <Text>Details for post {id}</Text>
     </YStack>
   );
 }
