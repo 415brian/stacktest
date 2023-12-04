@@ -11,6 +11,7 @@ export default function HomePage() {
       ai="center"
     >
       <Button
+        bc="white"
         borderWidth="$1"
         borderColor="black"
         borderRadius={10}

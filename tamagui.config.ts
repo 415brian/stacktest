@@ -25,8 +25,45 @@ const animations = createAnimations({
   }
 });
 
-const headingFont = createInterFont();
-const bodyFont = createInterFont();
+const headingFont = createInterFont(
+  {
+    size: {
+      6: 15
+    },
+    transform: {
+      6: "uppercase",
+      7: "none"
+    },
+    weight: {
+      3: "500",
+      4: "700",
+      5: "900"
+    },
+    face: {
+      700: { normal: "InterBold" }
+    }
+  },
+  {
+    sizeSize: (size) => size,
+    sizeLineHeight: (fontSize) => fontSize + 4
+  }
+);
+const bodyFont = createInterFont(
+  {
+    weight: {
+      3: "500",
+      4: "700",
+      5: "900"
+    },
+    face: {
+      700: { normal: "InterBold" }
+    }
+  },
+  {
+    sizeSize: (size) => Math.round(size * 1.1),
+    sizeLineHeight: (size) => size + 5
+  }
+);
 
 const config = createTamagui({
   animations,

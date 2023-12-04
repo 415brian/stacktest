@@ -10,7 +10,6 @@ import * as Font from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { TamaguiProvider, Text, Theme } from "tamagui";
 
-import { MySafeAreaView } from "../components/MySafeAreaView";
 import config from "../tamagui.config";
 
 SplashScreen.preventAutoHideAsync();
@@ -35,16 +34,14 @@ export default function Layout() {
     <TamaguiProvider config={config}>
       <Suspense fallback={<Text>Loading...</Text>}>
         <Theme name={colorScheme}>
-          <MySafeAreaView>
-            <Stack>
-              <Stack.Screen
-                name="(tabs)"
-                options={{
-                  headerShown: false
-                }}
-              />
-            </Stack>
-          </MySafeAreaView>
+          <Stack>
+            <Stack.Screen
+              name="(tabs)"
+              options={{
+                headerShown: false
+              }}
+            />
+          </Stack>
         </Theme>
       </Suspense>
     </TamaguiProvider>
