@@ -4,6 +4,9 @@ import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { TamaguiProvider, Text, Theme } from "tamagui";
 import config from "../tamagui.config";
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs(['fontFamily "unset" is not a system font']);
 
 SplashScreen.preventAutoHideAsync();
 

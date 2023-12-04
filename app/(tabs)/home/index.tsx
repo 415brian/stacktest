@@ -1,4 +1,4 @@
-import { YStack, Text, Button } from "tamagui";
+import { YStack, Text, Paragraph, Button } from "tamagui";
 import { useRouter } from "expo-router";
 
 export default function HomePage() {
@@ -11,7 +11,14 @@ export default function HomePage() {
       ai="center"
       space="$3"
     >
-      <Text fos="$4">Page "pushed withiin" the tab bar:</Text>
+      <Paragraph
+        fos="$4"
+        fow="600"
+        mx={20}
+      >
+        Page "pushed WITHIN" the tab bar. Upon clicking, the tab bar will remain
+        visible.
+      </Paragraph>
       <Button
         bc="white"
         borderWidth="$1"
