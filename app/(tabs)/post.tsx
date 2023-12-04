@@ -14,19 +14,19 @@ export default function PostsPage() {
       <Text fos="$4">Pages "pushed within" the tab bar:</Text>
       <Link
         href="/posts/1"
-        style={{ fontSize: 20 }}
+        style={{ fontSize: 20, color: "blue" }}
       >
         Post 1
       </Link>
       <Link
         href="/posts/2"
-        style={{ fontSize: 20 }}
+        style={{ fontSize: 20, color: "blue" }}
       >
         Post 2
       </Link>
       <Link
         href="/posts/3"
-        style={{ fontSize: 20 }}
+        style={{ fontSize: 20, color: "blue" }}
       >
         Post 3
       </Link>

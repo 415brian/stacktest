@@ -1,5 +1,4 @@
 import { Stack, useRouter } from "expo-router";
-import { Button } from "tamagui";
 
 export default function StackLayout() {
   const router = useRouter();

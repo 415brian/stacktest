@@ -15,12 +15,13 @@ export default function HomePage() {
       <Button
         bc="white"
         borderWidth="$1"
-        borderColor="black"
+        borderColor="blue"
         borderRadius={10}
         onPress={() => router.push("/home/settings")}
       >
         <Button.Text
-          fow={600}
+          color="blue"
+          fow="600"
           fos="$5"
         >
           Settings Page
