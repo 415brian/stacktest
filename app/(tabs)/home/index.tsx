@@ -18,8 +18,8 @@ export default function HomePage() {
         fow="600"
         mx={20}
       >
-        Page "pushed WITHIN" the tab bar. Upon clicking, the tab bar will remain
-        visible.
+        Page "pushed WITHIN" the tab bar because it's UNDER the "tabs" file
+        structure. Upon clicking, the tab bar will remain visible.
       </Paragraph>
       <Button
         bc="white"

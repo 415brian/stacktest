@@ -1,6 +1,7 @@
 //links to open OUTSIDE tab bar
 
-import { YStack, Text, Paragraph } from "tamagui";
+import { Paragraph, Text, YStack } from "tamagui";
+
 import { Link } from "expo-router";
 
 export default function PostsPage() {
@@ -16,8 +17,8 @@ export default function PostsPage() {
         fow="600"
         mx={20}
       >
-        Pages "pushed ABOVE" the tab bar. Upon clicking, the tab bar will NOT be
-        visible.
+        Pages "pushed ABOVE" the tab bar because it's OUTSIDE the "tabs" file
+        structure. Upon clicking, the tab bar will NOT be visible.
       </Paragraph>
       <Link
         href="/posts/1"
