@@ -1,12 +1,13 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { useColorScheme } from "react-native";
-import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { TamaguiProvider, Text, Theme } from "tamagui";
-import config from "../tamagui.config";
-import { LogBox } from "react-native";
 
-LogBox.ignoreLogs(['fontFamily "unset" is not a system font']);
+import { LogBox } from "react-native";
+import config from "../tamagui.config";
+import { useColorScheme } from "react-native";
+import { useFonts } from "expo-font";
+
+LogBox.ignoreLogs(["not a system font"]);
 
 SplashScreen.preventAutoHideAsync();
 

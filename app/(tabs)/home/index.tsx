@@ -1,4 +1,6 @@
-import { YStack, Text, Paragraph, Button } from "tamagui";
+import { Button, Paragraph, Text, YStack } from "tamagui";
+import { PSButton, PSButtonText } from "../../../components/PSButton";
+
 import { useRouter } from "expo-router";
 
 export default function HomePage() {
@@ -34,6 +36,9 @@ export default function HomePage() {
           Settings Page
         </Button.Text>
       </Button>
+      <PSButton onPress={() => router.push("/home/settings")}>
+        <PSButtonText>Settings Page</PSButtonText>
+      </PSButton>
     </YStack>
   );
 }
