@@ -36,9 +36,6 @@ export default function HomePage() {
           Settings Page
         </Button.Text>
       </Button>
-      <PSButton onPress={() => router.push("/home/settings")}>
-        <PSButtonText>Settings Page</PSButtonText>
-      </PSButton>
     </YStack>
   );
 }
