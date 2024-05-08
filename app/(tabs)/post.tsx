@@ -1,8 +1,9 @@
 //links to open OUTSIDE tab bar
 
+import { Link, useRouter } from "expo-router";
 import { Paragraph, Text, YStack } from "tamagui";
 
-import { Link } from "expo-router";
+const router = useRouter();
 
 export default function PostsPage() {
   return (
